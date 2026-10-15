@@ -1,0 +1,20 @@
+{
+  "name": "cloudevault",
+  "version": "1.0.0",
+  "description": "Cloud Vault - Secure Cloud Storage System",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "start": "cd server && npm start",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "cloud-storage",
+    "security",
+    "mfa",
+    "webauthn",
+    "college-project"
+  ],
+  "author": "",
+  "license": "ISC"
+}
