@@ -1,7 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "build": "vite build",
+  "framework": "vite",
   "routes": [
     { "src": "/api/(.*)", "dest": "http://localhost:3001/$1" },
+    { "src": "(.*)\\?(.*)", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ],
   "headers": [
