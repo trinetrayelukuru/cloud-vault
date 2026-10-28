@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    { "src": "/api/(.*)", "dest": "http://localhost:3001/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "headers": [
+    { "source": "/api/(.*)", "headers": [{ "key": "Origin", "value": "https://your-frontend.vercel.app" }] }
+  ]
+}
